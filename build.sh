@@ -9,6 +9,7 @@ export FUZZING_HOME=$(pwd)
 export LLVM=llvm-project
 export AFL=AFLplusplus
 export PATH=$PATH:$FUZZING_HOME/clang+llvm/bin
+export PATH=$PATH:$FUZZING_HOME/cmake/bin
 
 ###### Compile AFLplusplus
 cd $FUZZING_HOME/$AFL; make -j; cd $FUZZING_HOME
