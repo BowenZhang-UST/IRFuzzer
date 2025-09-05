@@ -15,9 +15,8 @@ export LLVM=llvm-project
 export AFL=AFLplusplus
 
 ###### Install llvm
-if [ ! -d $HOME/clang+llvm ]
+if [ ! -d $FUZZING_HOME/clang+llvm ]
 then
-    cd $HOME
     CLANG_LLVM=clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04
     wget https://github.com/llvm/llvm-project/releases/download/llvmorg-14.0.0/$CLANG_LLVM.tar.xz
     tar -xvf $CLANG_LLVM.tar.xz
@@ -25,7 +24,7 @@ then
     mv $CLANG_LLVM clang+llvm14
     ln -s clang+llvm14 clang+llvm
 fi
-export PATH=$PATH:$HOME/clang+llvm/bin
+export PATH=$PATH:$FUZZING_HOME/clang+llvm/bin
 
 cd $FUZZING_HOME
 ###### Download submodules
