@@ -11,7 +11,7 @@ export AFL_CUSTOM_MUTATOR_LIBRARY=$FUZZING_HOME/mutator/build/libAFLCustomIRMuta
 # AFL instrumentation method
 export AFL_LLVM_INSTRUMENT=CLASSIC
 
-export TRIPLE=<Your triple>
+export TRIPLE=x86_64-unknown-linux-gnu
 export CPU=
 export ATTR=
 export MATCHER_TABLE_SIZE=13780
