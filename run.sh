@@ -10,6 +10,7 @@ export AFL_CUSTOM_MUTATOR_ONLY=1
 export AFL_CUSTOM_MUTATOR_LIBRARY=$FUZZING_HOME/mutator/build/libAFLCustomIRMutator.so
 # AFL instrumentation method
 export AFL_LLVM_INSTRUMENT=CLASSIC
+AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1
 
 export TRIPLE=x86_64-unknown-linux-gnu
 export CPU=
