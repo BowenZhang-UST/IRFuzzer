@@ -7,12 +7,12 @@ RUN apt-get update && \
     apt-get clean
 
 ENV FUZZING_HOME=/IRFuzzer
-RUN git clone https://github.com/SecurityLab-UCD/IRFuzzer.git $FUZZING_HOME -b irfuzzer-0.3
+RUN git clone https://github.com/SecurityLab-UCD/IRFuzzer.git $FUZZING_HOME -b irfuzzer-0.4
 WORKDIR $FUZZING_HOME
 
 ENV LLVM=llvm-project
 ENV AFL=AFLplusplus
-ENV PATH="${FUZZING_HOME}/clang+llvm/bin:${PATH}"
+ENV PATH="${FUZZING_HOME}/clang/bin:${PATH}"
 ENV AFL_LLVM_INSTRUMENT=CLASSIC
 
 RUN ./init.sh
