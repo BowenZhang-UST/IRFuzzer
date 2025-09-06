@@ -12,7 +12,7 @@ WORKDIR $FUZZING_HOME
 
 ENV LLVM=llvm-project
 ENV AFL=AFLplusplus
-ENV PATH="${PATH}:/clang+llvm/bin"
+ENV PATH="${FUZZING_HOME}/clang+llvm/bin:${PATH}"
 ENV AFL_LLVM_INSTRUMENT=CLASSIC
 
 RUN ./init.sh
