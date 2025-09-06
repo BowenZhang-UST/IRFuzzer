@@ -21,10 +21,10 @@ then
     wget https://github.com/llvm/llvm-project/releases/download/llvmorg-14.0.0/$CLANG_LLVM.tar.xz
     tar -xvf $CLANG_LLVM.tar.xz
     rm $CLANG_LLVM.tar.xz
-    mv $CLANG_LLVM clang+llvm14
-    ln -s clang+llvm14 clang+llvm
+    mv $CLANG_LLVM clang14
+    ln -s clang14 clang
 fi
-export PATH=$PATH:$FUZZING_HOME/clang+llvm/bin
+export PATH=$PATH:$FUZZING_HOME/clang/bin
 
 cd $FUZZING_HOME
 ###### Download submodules
