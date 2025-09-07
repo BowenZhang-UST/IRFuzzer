@@ -17,4 +17,4 @@ export ATTR=
 export MATCHER_TABLE_SIZE=13780
 export AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1
 
-./AFLplusplus/afl-fuzz -i $FUZZING_HOME/seeds.ll -o fuzzing llvm-isel-afl/build/isel-fuzzing -V 10
+./AFLplusplus/afl-fuzz -i $FUZZING_HOME/seeds.ll -o fuzzing llvm-isel-afl/build/isel-fuzzing -V 50
