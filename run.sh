@@ -1,7 +1,7 @@
 # Path to this directory
 export FUZZING_HOME=$(pwd)
 # The LLVM you want to fuzz
-export LLVM=llvm-project/build-release
+export LLVM=llvm-project
 export AFL=AFLplusplus
 export PATH=$PATH:$FUZZING_HOME/clang+llvm/bin
 # Tell AFL++ to only use our mutator
