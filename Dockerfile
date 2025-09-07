@@ -16,7 +16,7 @@ RUN apt-get install -y -q git build-essential wget zlib1g-dev cmake python3 pyth
 RUN apt-get clean
 
 ENV FUZZING_HOME=/IRFuzzer
-RUN git clone https://github.com/BowenZhang-UST/IRFuzzer.git $FUZZING_HOME -b irfuzzer-0.4
+RUN git clone https://github.com/BowenZhang-UST/IRFuzzer.git $FUZZING_HOME -b expr
 WORKDIR $FUZZING_HOME
 
 ENV LLVM=llvm-project
